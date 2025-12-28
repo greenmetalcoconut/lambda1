@@ -23,4 +23,4 @@ jobs:
           java-version: 25
 
       - name: Build Lambda
-        run: mvn clean package -DskipTests    
+        run: gradle build -x test -i    
