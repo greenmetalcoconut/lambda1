@@ -13,6 +13,8 @@ public class HandlerS3 implements RequestHandler<S3Event, String>{
     public String handleRequest(S3Event event, Context context)
     {
         LambdaLogger logger = context.getLogger();
+        logger.log("EVENT: " + event);
+        logger.log("CONTEXT: " + context);
         S3EventNotificationRecord record = event.getRecords().get(0);
         String srcBucket = record.getS3().getBucket().getName();
         // Object key may have spaces or unicode non-ASCII characters.

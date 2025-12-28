@@ -6,10 +6,12 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: build/distributions/java-events.zip
-      Handler: example.HandlerSQS
-      Runtime: java11
+      Handler: example.HandlerS3
+      Runtime: java25
+      Architectures:
+        - arm64
       Description: Java function
-      MemorySize: 2048
+      MemorySize: 512
       Timeout: 10
       # Function's execution role
       Policies:
