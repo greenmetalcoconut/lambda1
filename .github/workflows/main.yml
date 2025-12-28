@@ -40,5 +40,5 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::348117807625:role/java-events-functionRole-T4VHC59hds3e
+          role-to-assume: arn:aws:iam::348117807625:role/GreenCoconutGithub
           aws-region: eu-north-1        
