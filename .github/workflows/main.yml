@@ -21,6 +21,9 @@ jobs:
         with:
           distribution: temurin
           java-version: 25
+          
+      - name: Make Gradle wrapper executable
+        run: chmod +x ./gradlew          
 
       - name: Build Lambda
         run: ./gradlew build -x test -i    
