@@ -29,7 +29,9 @@ jobs:
         run: ls -la          
           
       - name: Make Gradle wrapper executable
+        working-directory: ./java-events
         run: chmod +x ./gradlew          
 
       - name: Build Lambda
+        working-directory: ./java-events
         run: ./gradlew build -x test -i    
