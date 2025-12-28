@@ -29,10 +29,10 @@ jobs:
         working-directory: sample-apps/java-events
         run: ls -la          
           
-      - name: Make Gradle wrapper executable
-        working-directory: sample-apps/java-events
-        run: chmod +x ./gradlew          
+      # - name: Make Gradle wrapper executable
+      #   working-directory: sample-apps/java-events
+      #   run: chmod +x ./gradlew          
 
       - name: Build Lambda
         working-directory: sample-apps/java-events
-        run: ./gradlew build -x test -i    
+        run: gradle build -x test -i    
