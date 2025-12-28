@@ -26,6 +26,7 @@ jobs:
 
 
       - name: List root directory
+        working-directory: sample-apps/java-events
         run: ls -la          
           
       - name: Make Gradle wrapper executable
