@@ -23,4 +23,4 @@ jobs:
           java-version: 25
 
       - name: Build Lambda
-        run: gradle build -x test -i    
+        run: ./gradlew build -x test -i    
