@@ -7,6 +7,8 @@ repositories {
 }
 
 dependencies {
+    // https://mvnrepository.com/artifact/software.amazon.awssdk/ssm
+    implementation 'software.amazon.awssdk:ssm:2.40.16'
     implementation 'com.amazonaws:aws-lambda-java-core:1.2.1'
     implementation 'com.amazonaws:aws-lambda-java-events:3.11.0'
     implementation 'com.google.code.gson:gson:2.8.9'
